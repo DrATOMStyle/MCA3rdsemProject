@@ -1,0 +1,693 @@
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Single Day', cursive;
+
+
+
+<!-- <div class="jumbotron">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+			<h1>NEW YEAR SALE!! Up to 50% off</h1>
+			<h2>Offer On - Shirts</h2>
+			<p>Ring in the New Year with style at ATOMStyles! Enjoy up to 50% off on our fashion-forward collection. Elevate your wardrobe with chic essentials and statement pieces. Don't miss out on this limited-time opportunity to start the year in fashion. Shop now and save big!</p>
+			<button>Shop Now</button>
+		</div>
+		<div class="col-md-6">			
+			<div><img id="hero-div" src="./images/hero2.jpg" alt="hero2">
+			</div>
+		</div>
+
+	</div>
+</div>
+</div> -->
+<script type="text/javascript">
+      (function () {
+  var words=[
+"Shirts","T-Shirts","Necklace's","Watches","Pants","Shorts","Shoes","Other Accessories..."
+    ],
+  i=0;
+  setInterval(function(){
+    $('#words').fadeout(function(){
+      $(this).html(words[(i=i+1)%words.lenght)]).fadeIn();
+    });
+  },1000)
+})();
+    </script>
+class="form-inline my-2 my-lg-0"
+linear-gradient(to right, lightgray, darkgray);
+@keyframes changeAm 
+{
+        0%{
+            opacity: 0;
+            /* content: "Shirts"; */
+        }
+        10%{
+            opacity: 1;
+            content: "Shirts";
+        }
+        30%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+            content: "T-Shirts";
+        }
+        70%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            content: "Necklace";
+        }
+        12%{
+            opacity: 1;
+            content: "T-Shirts";
+        }
+        25%{
+            content: "Necklace";
+        }
+        37%{
+            content: "Watches";
+        }
+        50%{
+            content: "Pants";
+        }
+        62%{
+            content: "Shorts";
+        }
+        75%{
+            content: "Shoes";
+        }
+        100%{
+            content: "Other Accessories...";
+        }
+}
+/* #textContainer
+{
+ animation: changeAm 2.5s infinite; 
+} */
+
+src="./images/C1.0.jpg"
+
+const imageContainer = document.getElementById('image-container');
+const imageContainer2 = document.getElementById('image-container2');
+const imageContainer3 = document.getElementById('image-container3');
+const imageContainer4 = document.getElementById('image-container4');
+const imageContainer5 = document.getElementById('image-container5');
+const imageContainer6 = document.getElementById('image-container6');
+const imageContainer7 = document.getElementById('image-container7');
+const imageContainer8 = document.getElementById('image-container8');
+const imageContainer9 = document.getElementById('image-container9');
+const imagePaths = [
+  './images/C1_1.webp',
+  './images/C1_2.webp',
+  './images/C1_3.webp',
+  './images/C1_0.jpg'
+];
+const imagePaths2 = [
+    './images/C2_1_1.jpg',
+    './images/C2_2_2.jpg',
+    './images/C2_3_3.jpg',
+    './images/C2_0_0.jpg'
+  ];
+  const imagePaths3 = [
+    './images/C3_1_1.webp',
+    './images/C3_2_2.webp',
+    './images/C3_3_3.webp',
+    './images/C3_0_0.webp'
+  ];
+  const imagePaths4 = [
+    './images/A1_1.webp',
+    './images/A1_2.webp',
+    './images/A1_3.webp',
+    './images/A1_0.webp'
+  ];
+  const imagePaths5 = [
+    './images/A2_1_1.jpg',
+    './images/A2_2_2.jpg',
+    './images/A2_3_3.jpg',
+    './images/A2_0_0.jpg'
+  ];
+  const imagePaths6 = [
+    './images/A3_1_1.jpg',
+    './images/A3_2_2.jpg',
+    './images/A3_3_3.jpg',
+    './images/A3_0_0.jpg'
+  ];
+  const imagePaths7 = [
+    './images/B1_1.webp',
+    './images/B1_2.webp',
+    './images/B1_3.webp',
+    './images/B1_0.jpg'
+  ];
+  const imagePaths8 = [
+    './images/B2_1_1.jpg',
+    './images/B2_2_2.jpg',
+    './images/B2_3_3.jpg',
+    './images/B2_0_0.jpg'
+  ];
+  const imagePaths9 = [
+    './images/B3_1_1.jpg',
+    './images/B3_2_2.jpg',
+    './images/B3_3_3.jpg',
+    './images/B3_0_0.jpg'
+  ];
+let currentImageIndex = 0;
+let currentImageIndex2 = 0;
+let currentImageIndex3 = 0;
+let currentImageIndex4 = 0;
+let currentImageIndex5 = 0;
+let currentImageIndex6 = 0;
+let currentImageIndex7 = 0;
+let currentImageIndex8 = 0;
+let currentImageIndex9 = 0;
+function changeImage() {
+  currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+  currentImageIndex2 = (currentImageIndex2 + 1) % imagePaths2.length;
+  currentImageIndex3 = (currentImageIndex3 + 1) % imagePaths3.length;
+  currentImageIndex4 = (currentImageIndex4 + 1) % imagePaths4.length;
+  currentImageIndex5 = (currentImageIndex5 + 1) % imagePaths5.length;
+  currentImageIndex6 = (currentImageIndex6 + 1) % imagePaths6.length;
+  currentImageIndex7 = (currentImageIndex7 + 1) % imagePaths7.length;
+  currentImageIndex8 = (currentImageIndex8 + 1) % imagePaths8.length;
+  currentImageIndex9 = (currentImageIndex9 + 1) % imagePaths9.length;
+  imageContainer.src = imagePaths[currentImageIndex];
+  imageContainer2.src = imagePaths2[currentImageIndex2];
+  imageContainer3.src = imagePaths3[currentImageIndex3];
+  imageContainer4.src = imagePaths4[currentImageIndex4];
+  imageContainer5.src = imagePaths5[currentImageIndex5];
+  imageContainer6.src = imagePaths6[currentImageIndex6];
+  imageContainer7.src = imagePaths7[currentImageIndex7];
+  imageContainer8.src = imagePaths8[currentImageIndex8];
+  imageContainer9.src = imagePaths9[currentImageIndex9];
+}
+
+setInterval(changeImage, 2000);
+
+
+var texts = ["T-Shirts","Necklace's","Watches","Pants","Shorts","Shoes","Other Accessories...","Shirts"];
+var currentIndex = 0;
+function changeText() {
+    var newText = texts[currentIndex];
+    document.getElementById("textContainer").innerText = newText;
+    currentIndex = (currentIndex + 1) % texts.length;
+}
+
+// Set timeout to change text every 5 seconds
+setInterval(changeText, 2000);
+
+
+
+// Combined script
+
+// Text changing functionality
+var texts = [
+  "T-Shirts",
+  "Necklace's",
+  "Watches",
+  "Pants",
+  "Shorts",
+  "Shoes",
+  "Other Accessories...",
+  "Shirts",
+];
+var currentIndex = 0;
+
+function changeText() {
+  var newText = texts[currentIndex];
+  document.getElementById("textContainer").innerText = newText;
+  currentIndex = (currentIndex + 1) % texts.length;
+}
+
+// Image changing functionality
+const imageContainers = [
+  document.getElementById('image-container'),
+  document.getElementById('image-container2'),
+  document.getElementById('image-container3'),
+  document.getElementById('image-container4'),
+  document.getElementById('image-container5'),
+  document.getElementById('image-container6'),
+  document.getElementById('image-container7'),
+  document.getElementById('image-container8'),
+  document.getElementById('image-container9'),
+];
+
+const imagePaths = [
+  ['./images/C1_1.webp', './images/C1_2.webp', './images/C1_3.webp', './images/C1_0.jpg'],
+  ['./images/C2_1_1.jpg', './images/C2_2_2.jpg', './images/C2_3_3.jpg', './images/C2_0_0.jpg'],
+  ['./images/C3_1_1.webp', './images/C3_2_2.webp', './images/C3_3_3.webp', './images/C3_0_0.webp'],
+  ['./images/A1_1.webp', './images/A1_2.webp', './images/A1_3.webp', './images/A1_0.webp'],
+  ['./images/A2_1_1.jpg', './images/A2_2_2.jpg', './images/A2_3_3.jpg', './images/A2_0_0.jpg'],
+  ['./images/A3_1_1.jpg', './images/A3_2_2.jpg', './images/A3_3_3.jpg', './images/A3_0_0.jpg'],
+  ['./images/B1_1.webp', './images/B1_2.webp', './images/B1_3.webp', './images/B1_0.jpg'],
+  ['./images/B2_1_1.jpg', './images/B2_2_2.jpg', './images/B2_3_3.jpg', './images/B2_0_0.jpg'],
+  ['./images/B3_1_1.jpg', './images/B3_2_2.jpg', './images/B3_3_3.jpg', './images/B3_0_0.jpg'],
+];
+
+let currentImageIndices = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+function changeImage() {
+  for (let i = 0; i < imageContainers.length; i++) {
+    currentImageIndices[i] = (currentImageIndices[i] + 1) % imagePaths[i].length;
+    imageContainers[i].src = imagePaths[i][currentImageIndices[i]];
+  }
+}
+
+// Set timeouts for both functionalities
+setInterval(changeText, 2000);
+setInterval(changeImage, 2000);
+
+rgba(255, 0, 0, 0.5)
+
+
+
+<script>
+$(document).ready(function(){
+  $(".signupEmail").keyup(function(){
+    if(emailValidation()){
+      $(".emailtest").html("<span style='color: green;font-weight: 500;'>Valid Email</span>");
+      $(".signupEmail").css("box-shadow","10px 10px 10px lightgreen");
+    }
+    else{
+      $(".emailtest").html("<span style='color: red; font-weight: 800;'>Invalid Email</span>");
+      $(".signupEmail").css("box-shadow","10px 10px 10px #FF474C");
+    }
+  })
+$(".signupName").keyup(function(){
+  if(NameValidation()){
+      $(".nametest").html("<span style='color: green;font-weight: 500;'>Valid</span>");
+      $(".signupName").css("box-shadow","10px 10px 10px lightgreen");
+    }
+    else{
+      $(".nametest").html("<span style='color: red; font-weight: 800;'>Only Characters</span>");
+      $(".signupName").css("box-shadow","10px 10px 10px #FF474C");
+    }
+})
+$(".signupPW").keyup(function(){
+  if(PWValidation()){
+      $(".PWtest").html("<span style='color: green;font-weight: 500;'>Valid Password Pattern</span>");
+      $(".signupPW").css("box-shadow","10px 10px 10px lightgreen");
+    }
+    else{
+      $(".PWtest").html("<span style='color: red; font-weight: 800;'>Invalid Password Pattern</span>");
+      $(".signupPW").css("box-shadow","10px 10px 10px #FF474C");
+    }
+})
+$(".signupContact").keyup(function(){
+  if(ContactValidation()){
+      $(".Contacttest").html("<span style='color: green;font-weight: 500;'>Valid Contact</span>");
+      $(".signupContact").css("box-shadow","10px 10px 10px lightgreen");
+    }
+    else{
+      $(".Contacttest").html("<span style='color: red; font-weight: 800;'>Invalid Contact</span>");
+      $(".signupContact").css("box-shadow","10px 10px 10px #FF474C");
+    }
+})
+$(".BookingContact").keyup(function(){
+  if(BookingContactValidation()){
+      $(".BookingContacttest").html("<span style='color: green;font-weight: 500;'>Valid Contact</span>");
+      $(".BookingContact").css("box-shadow","10px 10px 10px lightgreen");
+    }
+    else{
+      $(".BookingContacttest").html("<span style='color: red; font-weight: 800;'>Invalid Contact</span>");
+      $(".BookingContact").css("box-shadow","10px 10px 10px #FF474C");
+    }
+})
+$(".BookingQuantity").keyup(function(){
+  if(BookingQuantityValidation()){
+      $(".Quantitytest").html("<span style='color: green;font-weight: 500;'>Valid Quantity</span>");
+      $(".BookingQuantity").css("box-shadow","10px 10px 10px lightgreen");
+    }
+    else{
+      $(".Quantitytest").html("<span style='color: red; font-weight: 800;'>Invalid Quantity</span>");
+      $(".BookingQuantity").css("box-shadow","10px 10px 10px #FF474C");
+    }
+})
+$(".startDate, .endDate").datepicker({
+    dateFormat: "yy-mm-dd" 
+  });
+  $("#endDate").datepicker("option", "minDate", 0);
+  $(".startDate").datepicker("option", "onSelect", function(dateText) {
+    $("#endDate").datepicker("option", "minDate", dateText);
+  });
+
+})
+
+function emailValidation(){
+  let emaildata = $(".signupEmail").val();
+  let mailpattern=  /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8})$/;
+
+  if(mailpattern.test(emaildata)){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+function NameValidation(){
+  let namedata = $(".signupName").val();
+  let namepattern=  /^[a-zA-Z\s]+$/;
+
+  if(namepattern.test(namedata)){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+function PWValidation() {
+  let PWdata = $(".signupPW").val();
+  let PWpattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,16}$/;
+;
+
+  if (PWpattern.test(PWdata)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function ContactValidation() {
+  let Contactdata = $(".signupContact").val();
+  let Contactpattern = /^\d{10}$/;
+
+  if (Contactpattern.test(Contactdata)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function BookingContactValidation() {
+  let BookingContactdata = $(".BookingContact").val();
+  let BookingContactpattern = /^\d{10}$/;
+
+  if (BookingContactpattern.test(BookingContactdata)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function BookingQuantityValidation() {
+  let BookingQuantitydata = $(".BookingQuantity").val();
+  let BookingQuantitypattern = /^\d+$/;
+
+  if (BookingQuantitypattern.test(BookingQuantitydata)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+</script>
+
+function(){
+//     var dtToday = new Date();
+
+//     var month = dtToday.getMonth() + 1;
+//     var day = dtToday.getDate();
+//     var year = dtToday.getFullYear();
+
+//     if(month < 10)
+//         month = '0' + month.toString();
+//     if(day < 10)
+//         day = '0' + day.toString();
+
+//     var maxDate = year + '-' + month + '-' + day;    
+//     $('#end_date').attr('min', maxDate);
+// });
+
+
+
+#atomIcon 
+{      
+    width: 250px;
+    height: 70px;
+}
+.header{
+    z-index: 1;
+    position: relative;
+}
+.nav-link
+{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;    
+    color: black;
+    margin: 5px;
+}
+.TopSide{
+    background-image: url('../images/hero3.jpg');
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 0, 100% 100%, 39% 100%, 0 95%, 0 0);
+    width: 100%;
+    height:98%;
+}
+.hero
+{    
+    color: black;       
+    font-family: 'Chakra Petch', sans-serif;
+    align-self: center;
+
+}
+.hero h1
+{
+    color: rgba(33,81,124,255);
+    font-weight: bold ;
+    font-size: 90px;
+    text-shadow: 5px 5px 3px white;
+    text-align: center;   
+}
+.hero p
+{
+    padding: 10px; 
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 3%;
+    text-shadow: 1px 1px 1px black;
+}
+.hero h2
+{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+.blink-text 
+{
+    animation: blink 2.5s infinite;
+    margin-bottom: 40px;
+}
+.changetext
+{
+    color: yellow;
+    font-size: 50px;          
+}
+.btn
+{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    border-radius: 20%;
+}
+.btn-primary:hover {    
+    background-color: purple;
+    border-color: black;
+  }
+@keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+                color: blue;
+            }            
+            50% {
+                opacity: 0;
+            }
+            75% {
+                opacity: 1;
+                color: red;
+            }
+            100%{
+                opacity: 0;
+            }
+}
+.background-curve {
+    position: relative;
+    height: 100%;
+    background:lightblue;   
+    border-radius: 0 0 100% 0;    
+    z-index: -1;
+}
+.row{
+    margin: 50px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 10px lightgray;
+}
+.card{
+    margin: 20px;
+    height: 100px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 5px rgba(56, 2, 250, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+.card-image{   
+   width: 75px;
+   height: 50px;
+   margin-top: -4%;
+}
+#FlipkartLogo{
+    width: 50px;
+   height: 40px;
+   margin-top: -3%;
+   margin-bottom: 2%;
+}
+.Star{
+    margin-top: 5px;
+    color: orange;
+    font-size:20px
+}
+.product-title{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 900;
+}
+.product-headers{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: underline ;
+    margin: 20px 20px 0px 20px;
+}
+.Product-card-body p{
+    margin: 10px 20px 10px 20px;
+}
+#image-container {
+    width: 350px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  #image-container2 {
+    width: 250px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  #image-container3 {
+    width: 400px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  #image-container4 {
+    width: 350px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  #image-container5 {
+    width: 350px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  #image-container6 {
+    width: 350px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  #image-container7 {
+    width: 350px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  #image-container8 {
+    width: 300px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  #image-container9 {
+    width: 400px;
+    height: 400px;
+    animation: image-change 2s infinite alternate ease-in-out;
+  }
+  @keyframes image-change {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+.Product-card{
+    margin: 20px;
+    height: 680px;
+    width: 480px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 5px rgba(56, 2, 250, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+#productprice{
+    margin-right: 150px;
+    font-weight: 1000;
+}
+.overlay{
+    width: 40px;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+ .Product-card:hover .overlay{
+opacity: 1;
+}
+.overlay img{
+    background-color: orange;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+}
+.Site-Services{
+background-color: lightblue;
+height: 450px;
+width: 100%;
+margin-top: 70px;
+border-radius: 30px;
+}
+.Site-Services h1{
+text-align: center;
+font-family: 'Chakra Petch', sans-serif;
+font-weight: 600;
+font-size: 50px;
+padding-top: 20px;
+border-bottom: 3px gray solid;
+}
+.Site-body{
+margin-left: 10px;
+margin-right: 20px;
+margin-top: 40px;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+.Services-items{
+    border-right: 2px black solid;
+}
+.Booking-img{
+    width: 100%;
+    height: 90%;
+    margin: 30px 30px 30px 0;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px gray;
+}
+.Booking-Right{
+    margin-top: 40px;
+}
